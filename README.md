@@ -1,6 +1,7 @@
 # Currículo Vitae
 - Neste repositótio constam todas as tarefas práticas do Projeto de Extensão de Desenvolvimento de Software da UCPel, coordenado pela Prof. Alexandra Lackmann Zimpeck e pelo Prof. Rogério Albandes, iniciado em Setembro de 2022 e concluído em Dezembro de 2022.</br>
 - Como tarefa principal ao longo deste semestre, trabalhamos em um CV (Currículo Vitae), aplicando o conhecimento adquirido no material informativo indicado (Curso de HTML5 do Prof. Gustavo Guanabara).</br>
+- É importante ressaltar que não utilizei dados sensíveis neste projeto devido ao fato de que tenho utilizado o GitHub como portfólio e os conhecimentos de Git para praticar o versionamento de código.</br>
 - Com exceção das duas últimas entregas do semestre - a aplicação do Bootstrap no CV e a criação de uma landing page de um negócio - para as quais foram criados repositórios próprios, todas as tarefas práticas restantes se encontram aqui.</br>
 - Decidi criar três repositórios separados (um para esta versão do CV, outra para uma versão construída do zero com Bootstrap, e a landing page) para poder criar as respectivas GitHub Pages de cada página.</br>
 
