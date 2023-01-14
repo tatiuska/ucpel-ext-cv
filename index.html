@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!-- página inicial do CV -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Tatiana Weska</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css"/> <!-- link de chamada do CSS -->
+</head>
+<body>
+    <div id="interface"> <!-- div principal comum a todas as páginas do CV -->
+
+        <header id="cabecalho"> <!-- cabeçalho personalizado do index.html -->
+            <hgroup> <!-- título da página, nome e curso -->
+                <h1>Curriculum Vitae</h1>
+                <h2 id="nome" onclick="status(nome)">Tatiana Weska</h2>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+            </hgroup>
+
+            <figure class="foto-cv"> <!-- foto para o CV com figcaption -->
+                <img id="img-cv" src="./imagens/foto_cv.jpg" onmousemove="mudaFoto(1)" onmouseout="mudaFoto(2)" onclick="mudaFoto(3)"/> <!-- chamada da função mudaFoto() -->
+                <figcaption>
+                    <p>Tatiana Weska</p>
+                </figcaption>
+            </figure>
+        </header>
+
+        <section id="principal-index"> <!-- section personalizada do index.html com divs separadas para dados pessoais e endereço -->
+            <div id="dados-pessoais">
+                <h4>Dados Pessoais</h4>
+                <p>
+                    Nome: Tatiana Weska<br>
+                    E-mail: <a href="mailto:meuemail@email.com" target="_top">meuemail@email.com</a><br>
+                    Gênero: Feminino<br>
+                    Estado Civil: Solteira<br>
+                    Data de nascimento: 04/06/1980<br>
+                </p>
+            </div>
+            <div id="endereco">
+                <h4>Endereço</h4> 
+                <p>
+                    Rua do Limoeiro, 1234, Apto. 56<br>
+                    Pelotas, Rio Grande do Sul, Brasil<br>
+                    CEP: 12.345-678<br>
+                </p>
+            </div>
+        </section>
+
+        <aside id="lateral"> <!-- aside onde fica a tabela com os idiomas do CV -->
+            <table id="tabela-idiomas">
+            <caption><h4>Idiomas</h4></caption>
+            <tr><td class="ce">Espanhol</td> <td class="cd">Básico</td></tr>
+            <tr><td class="ce">Inglês</td> <td class="cd">Avançado</td></tr>
+            <tr><td class="ce">Português</td> <td class="cd">Nativo</td></tr>
+            </table>
+        </aside>
+
+        <footer id="rodape-principal"> <!-- footer do index.html, onde fica o menu de navegação, com chamada da função mudaFoto() e o script Date(), que mostra data e hora de acesso ao CV -->
+            <nav id="menu">
+                <h1>Menu</h1>
+                <ul type="disc">
+                    <li><a href="formacao-academica.html">Formação Acadêmica</a></li>
+                    <li><a href="cursos-realizados.html">Cursos Realizados</a></li>
+                    <li><a href="exp-profissional.html">Experiência Profissional</a></li>
+                    <li><a href="contato.html">Contato</a></li><!-- página criada para o formulário de contato -->
+                    <li><a href="creditos.html">Créditos</a></li><!-- página criada para abrigar os créditos de mídias utilizadas no projeto -->
+                </ul>
+            </nav>
+            <div id="radio"><!--div criada para inserir o áudio-->
+                <audio id="musica" controls="controls">
+                    <source src="./midia/quick-mechanical-keyboard-14391.mp3" type="audio/mpeg"/>
+                    <source src="./midia/quick-mechanical-keyboard-14391.m4a" type="audio/x-aac"/>
+                    <source src="./midia/quick-mechanical-keyboard-14391.ogg" type="audio/ogg"/>
+                    Desculpe, mas não foi possível carregar o áudio.
+                </audio>
+            </div>
+            <p id="script-cv"> <!-- parágrafo personalizado para o script Date(), para que ficasse centralizado e em uma fonte menor -->
+                <script>
+                        document.write("Currículo acessado em: " + Date());
+                </script>
+            </p>
+        </footer>
+    </div>
+    <script language="javascript" src="./js/script.js"></script> <!-- chamada do arquivo .js onde estão os códigos das funções mudaFoto() e status(nome) -->
+</body>
+</html>
